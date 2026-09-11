@@ -210,7 +210,7 @@ if page == "🏠 Home":
     if st.button("Recommend a Random Movie"):
         random_index = random.randint(0,9)
         st.image(
-            "D:/PROJECT/assests/Posters/" +
+            "Posters/" +
             movie_posters[random_index],
             width=250
         )
@@ -415,7 +415,7 @@ if page == "🎬 Movies":
     col1, col2 = st.columns(2)
     with col1:
         st.image(
-        "D:/PROJECT/assests/Posters/" +
+        "Posters/" +
         movie_posters[random_index],
         width=250
         )
@@ -455,7 +455,7 @@ if page == "🎬 Movies":
          with col1:
 
             st.image(
-            "D:/PROJECT/assests/Posters/" +
+            "Posters/" +
             movie_posters[random_index],
             width=250
             )
@@ -486,7 +486,7 @@ if page == "🎬 Movies":
    
             with cols[col]:
                 st.image(
-                "D:/PROJECT/assests/Posters/" + movie_posters[index],width = 220
+                "Posters/" + movie_posters[index],width = 220
             )
                 st.divider()
                 st.link_button(
@@ -569,7 +569,7 @@ if page == "📺 TV Shows":
             index =  row * 5 + col    
             with cols[col]:
                 st.image(
-                "D:/PROJECT/assests/Posters/" + tv_posters[index],width = 300
+                "Posters/" + tv_posters[index],width = 300
             )
                 st.divider()
                 st.link_button(
