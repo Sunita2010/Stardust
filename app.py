@@ -161,7 +161,7 @@ if page == "🏠 Home":
     cols  = st.columns(5)
     for i in  range(5):
         with cols[i]:
-            st.image("D:/PROJECT/assests/Posters/"+ movie_posters[i], width=210)
+            st.image("D:\MCA me\Project sem 4\STARDUST\assests\Posters\"+ movie_posters[i], width=210)
             st.link_button(
                "▶ Watch Trailer",
                  movie_trailers[i]
