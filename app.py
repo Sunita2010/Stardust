@@ -12,7 +12,7 @@ page = st.sidebar.radio(
 )
 st.sidebar.divider()
 st.sidebar.subheader("👩‍💻 Developed by")
-st.sidebar.write("Jasmeet Kaur")
+st.sidebar.write("Sunita")
 
 if page == "🏠 Home": 
     df = pd.read_csv('netflix.csv')
