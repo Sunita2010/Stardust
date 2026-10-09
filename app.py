@@ -4,11 +4,11 @@ import numpy as np
 import random
 import time 
 import matplotlib.pyplot as plt
-st.set_page_config("📽️Stardust")#change the app name froome streamlit to the desired name and it should be wrtten as the first function in the code
+st.set_page_config("📽️SmartCine Engine")#change the app name froome streamlit to the desired name and it should be wrtten as the first function in the code
 
 page = st.sidebar.radio(
     "Navigate",
-    ["🏠 Home","🎬 Movies","📺 TV Shows","📊 Insights","🎮STARDUST Arcade","💫 Movie Match"]
+    ["🏠 Home","🎬 Movies","📺 TV Shows","📊 Insights","🎮SmartCine Engine Arcade","💫 Movie Match"]
 )
 st.sidebar.divider()
 st.sidebar.subheader("👩‍💻 Developed by")
@@ -16,9 +16,9 @@ st.sidebar.write("Sunita")
 
 if page == "🏠 Home": 
     df = pd.read_csv('netflix.csv')
-    st.title("📽️STAR DUST")#adds the title of the app
+    st.title("📽️SmartCine Engine")#adds the title of the app
     st.caption("Where every story finds its audience.")#write the caption under the title we can also use write() but to make it elegant we use caption()
-    st.info("✨ Welcome to STARDUST! Explore trending movies, TV shows, and discover hidden gems.")
+    st.info("✨ Welcome to SmartCine Engine! Explore trending movies, TV shows, and discover hidden gems.")
     
     st.container()
     st.subheader("✨ Vibe Check")
@@ -242,7 +242,7 @@ if page == "🏠 Home":
     st.info(random.choice(facts))
     st.divider()
     st.caption("Made with ❤️ using Python, Pandas, Matplotlib and Streamlit.")
-    st.caption("© 2026 STARDUST")
+    st.caption("© 2026 SmartCine Engine")
 if page == "📊 Insights":
     
     df = pd.read_csv('netflix.csv')
@@ -501,7 +501,7 @@ if page == "🎬 Movies":
                 st.caption(f"🕒 {movies_df.iloc[index]['duration']}")
         st.write("")
     
-    st.success("🍿 Enjoy Exploring STARDUST!")
+    st.success("🍿 Enjoy Exploring SmartCine Engine!")
     st.info("✨ More movies are waiting on the next page!")
 
 if page == "📺 TV Shows":
@@ -588,7 +588,7 @@ if page == "📺 TV Shows":
 if page == "💫 Movie Match":
     df = pd.read_csv('netflix.csv')
     st.title("💫 Movie Match")
-    st.caption("Answer a few fun questions and let STARDUST discover your perfect watch.")
+    st.caption("Answer a few fun questions and let SmartCine Engine discover your perfect watch.")
     st.divider()
     st.subheader("🌙 It's Friday Night...")
 
@@ -679,28 +679,28 @@ if page == "💫 Movie Match":
         else:
             st.snow()
             st.header("🌌 The Stars Have Spoken...")
-            st.write("Here's what STARDUST thinks about you 💫")
+            st.write("Here's what SmartCine Engine thinks about you 💫")
             st.divider()
             if q5 == "😂 Funny":
-                st.success("🏆 STARDUST Badge Unlocked")
+                st.success("🏆 SmartCine Engine Badge Unlocked")
                 st.markdown("## 😂 The Comedy King/Queen")
                 st.write(
                 "You love light-hearted stories, unforgettable laughs, and movies that make every night more fun."
                 )
             elif q5 == "😭 Emotional":
-                st.success("🏆 STARDUST Badge Unlocked")
+                st.success("🏆 SmartCine Engine Badge Unlocked")
                 st.markdown("## 💖 The Hopeless Romantic")
                 st.write(
             "You enjoy emotional journeys, meaningful characters, and stories that stay with you."
                 )
             elif q5 == "😱 Thriller":
-                st.success("🏆 STARDUST Badge Unlocked")
+                st.success("🏆 SmartCine Engine Badge Unlocked")
                 st.markdown("## 🕵️ The Detective")
                 st.write(
             "You enjoy suspense, mystery, and plot twists that keep everyone guessing."
                 )
             elif q5 == "🚀 Adventure": 
-                st.success("🏆 STARDUST Badge Unlocked")
+                st.success("🏆 SmartCine Engine Badge Unlocked")
                 st.markdown("## 🚀 The Explorer")
                 st.write(
                 "You love discovering new worlds, exciting adventures, and unforgettable journeys."
@@ -716,7 +716,7 @@ if page == "💫 Movie Match":
         
             recommendations = result.sample(min(5, len(result)))
             st.divider()
-            st.subheader("🍿 Your STARDUST Picks")
+            st.subheader("🍿 Your SmartCine Engine Picks")
             for i in range(len(recommendations)):
                 st.markdown(f"### 🎬 {recommendations.iloc[i]['title']}")
                 st.write(f"⭐ Rating : {recommendations.iloc[i]['rating']}")
@@ -726,7 +726,7 @@ if page == "💫 Movie Match":
                 st.divider()
         st.info("✨ Not feeling these? Click 'Reveal My Match' again for a fresh set of recommendations!")
 
-if page == "🎮STARDUST Arcade" :
+if page == "🎮SmartCine Engine Arcade" :
     
     st.subheader("🎞️ Guess the Blockbuster")
     st.write("Can you guess the movie from the emojis?")
