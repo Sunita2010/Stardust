@@ -246,7 +246,7 @@ if page == "🏠 Home":
 if page == "📊 Insights":
     
     df = pd.read_csv('netflix.csv')
-    st.title("📽️STAR DUST")
+    st.title("📽️SmartCine Engine")
     
     st.title("🎶Explore Box Office Trends🎶")
     movie = df[df['type']=="Movie"].shape[0]
@@ -321,7 +321,7 @@ if page == "🎬 Movies":
     st.title("Movies")
     
     df = pd.read_csv('netflix.csv')
-    st.title("📽️STAR DUST")
+    st.title("📽️SmartCine Engine")
     search = st.text_input( "",
           placeholder="What story are you looking for tonight?"
     )
@@ -508,7 +508,7 @@ if page == "📺 TV Shows":
     st.title("📺 TV Shows")
 
     df = pd.read_csv('netflix.csv')
-    st.title("📽️STAR DUST")
+    st.title("📽️SmartCine Engine")
     search = st.text_input( "",
           placeholder="What story are you looking for tonight?"
     )
